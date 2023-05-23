@@ -6,7 +6,7 @@
 Este é um projeto Web Responsivo de uma cápsula do tempo para exibir em uma linha do tempo
 
 ## 🚀 Tecnologias
-Esste proojeto foi desenvolvido durante a NLW da Rocketsear com as seguintes tecnologias:
+Esste projeto foi desenvolvido durante a NLW da Rocketsear com as seguintes tecnologias:
 
 - HTLM
 - CSS
