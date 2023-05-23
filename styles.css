@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+:root {
+  font-size: 16px;
+}
+
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -58,11 +62,11 @@ nav {
 
 .memory small {
   color: #bebebf;
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 
 .memory h1 {
-  font-size: 32px;
+  font-size: 2rem;
   color: #eaeaea;
 }
 
@@ -86,9 +90,8 @@ nav {
   border-radius: 8px;
 }
 
-
 .memory p {
-  font-size: 18px;
+  font-size: 1.2rem;
   color: #bebebf;
   line-height: 28px;
 }
@@ -108,7 +111,7 @@ aside {
   background-image: url("assets/background.svg");
   background-position: top right;
   background-repeat: no-repeat;
-  background-size: auto 100%; 
+  background-size: auto 100%;
 }
 
 aside * {
@@ -121,15 +124,40 @@ aside img:nth-child(2) {
   border-radius: 50%;
 
   border: 4px solid transparent;
-  background: linear-gradient(#d39e33, #ed5636, #633bbc) padding-box, linear-gradient(260deg, #d39e33, #ed5636, #633bbc) border-box;
+  background: linear-gradient(#d39e33, #ed5636, #633bbc) padding-box,
+    linear-gradient(260deg, #d39e33, #ed5636, #633bbc) border-box;
 }
 
 aside p {
-  font-size: 32px;
+  font-size: 2rem;
   text-align: center;
 }
 
 aside {
-  font size: 12px;
+  font-size: 0.75rem;
   color: #9e9ea0;
+}
+
+@media (max-width: 768px) {
+  :root {
+    font-size: 14px;
+  }
+
+  body {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 0.8fr;
+    grid-template-areas:
+      "profile"
+      "timeline";
+  }
+
+  aside {
+    border-right: none;
+    padding: 32px 12px;
+  }
+
+  nav {
+    overflow-y: visible;
+    padding: 22px;
+  }
 }
